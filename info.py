@@ -1,5 +1,6 @@
 import re
 import os
+PORT = int(os.environ.get("PORT", 8080))
 from os import environ, getenv
 from Script import script
 
