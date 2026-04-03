@@ -23,7 +23,7 @@ Image.MAX_IMAGE_PIXELS = 500_000_000
 
 import logging
 import logging.config
-
+LOGGER = logging.getLogger(__name__)
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
